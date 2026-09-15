@@ -1,6 +1,7 @@
 # Core Isolation Spoof Detector
 
 "This Detection is a forcing function. In an anti-cheat that mandates HVCI, an attacker cannot bypass this without a signed hypervisor of their own — every other path is blocked.
+"This standalone binary is a reference implementation. Any user-mode admin attacker can inject into the process and tamper with results (patch NtQuerySystemInformation in-process or patch the CPUID call site). For production use, integrate the detection logic into your anti-cheat's protected binary and apply process mitigation policies. Signed/attested telemetry is recommended if the result is trusted server-side."
 
 A tiny, dependency-free Windows tool that detects **HVCI / Core Isolation
 (Memory Integrity) spoofing** — a technique cheats and rootkits use to load
