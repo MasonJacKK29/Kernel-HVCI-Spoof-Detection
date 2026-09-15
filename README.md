@@ -1,6 +1,6 @@
 # Core Isolation Spoof Detector
 
-"This detector is a forcing function. In an anti-cheat that mandates HVCI, an attacker cannot bypass this without a signed hypervisor of their own — every other path is blocked.
+"This Detection is a forcing function. In an anti-cheat that mandates HVCI, an attacker cannot bypass this without a signed hypervisor of their own — every other path is blocked.
 
 A tiny, dependency-free Windows tool that detects **HVCI / Core Isolation
 (Memory Integrity) spoofing** — a technique cheats and rootkits use to load
